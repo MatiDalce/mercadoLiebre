@@ -1,3 +1,6 @@
+* { box-sizing: border-box;}
+
+
 body { font-family: 'roboto' , sans-serif;
     
     font-size: 12px;}
@@ -13,6 +16,7 @@ body { font-family: 'roboto' , sans-serif;
 
 .descripDescuento { font-size: 16px;}
 
+.iconosAzules { color:blue;}
 
 
 
