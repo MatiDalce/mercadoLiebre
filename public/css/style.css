@@ -1,12 +1,10 @@
 
 
 
-body { font-family: 'roboto' , sans-serif;
-    
+body { font-family: 'roboto' , sans-serifg;
     font-size: 12px;
-display: block;}
-
-
+display: block;
+text-align: center;}
 
 
 #header { display:block;
@@ -14,7 +12,6 @@ display: block;}
 
     #menuHam { color:white;
     background-color: blue;
-display: inline;
 position: center;}
 
 .logo { width: 360px;}
@@ -25,7 +22,10 @@ h2 {font-size: 24px;}
 
 .descripDescuento { font-size: 16px;}
 
-.iconosAzules { color:blue;}
+.iconosAzules { color:blue;
+                font-size: 2em;
+                margin-bottom: 10px;
+            text-align: center;}
 
 
 
