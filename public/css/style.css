@@ -7,9 +7,17 @@ body { font-family: 'roboto' , sans-serif;
 display: block;}
 
 
+
+
 #header { display:block;
     background-color: #EAC926 ;} 
 
+    #menuHam { color:white;
+    background-color: blue;
+display: inline;
+position: center;}
+
+.logo { width: 360px;}
 
 h2 {font-size: 24px;}
 
