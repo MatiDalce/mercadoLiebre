@@ -1,16 +1,20 @@
-* { box-sizing: border-box;}
+
+
+
+article { display: block;} 
 
 
 body { font-family: 'roboto' , sans-serif;
     
-    font-size: 12px;}
+    font-size: 12px;
+display: block;}
 
 
-#header { background-color: #EAC926 ;} 
+#header { display:block;
+    background-color: #EAC926 ;} 
 
 
-
-.ultimaBusquedaOfertas  { font-size: 24px;} 
+h2 {font-size: 24px;}
 
 .precios {font-size: 18px;} 
 
