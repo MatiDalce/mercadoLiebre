@@ -3,6 +3,7 @@ main { display: flex;
     flex-direction: column;
     background-color: #ebebeb;
     align-items: center;
+    margin:0;
 }
 
 footer { display: flex;
@@ -19,12 +20,13 @@ body { font-family: 'roboto' , sans-serifg;
     font-size: 12px;
 display: block;
 text-align: center;
-width: 100%;}
+width: 100%;
+margin: 0;}
 
 
 header { 
     background-color: #EAC926 ;
-padding-bottom: 0px;} 
+padding: 0px;} 
 
     #menuHam { display: inline-block;
         color:white;
@@ -54,6 +56,6 @@ h2 {font-size: 24px;}
             text-align: center;}
 
 
-#banner { display: block;
+#banner {   
      margin-bottom: 0px;
 }
