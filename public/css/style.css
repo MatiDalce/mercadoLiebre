@@ -18,7 +18,8 @@ margin-bottom: 15px;}
 body { font-family: 'roboto' , sans-serifg;
     font-size: 12px;
 display: block;
-text-align: center;}
+text-align: center;
+width: 100%;}
 
 
 header { 
@@ -55,4 +56,4 @@ h2 {font-size: 24px;}
 
 #banner { display: block;
      margin-bottom: 0px;
-width: 365px;}
+}
