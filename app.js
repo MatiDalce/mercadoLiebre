@@ -7,6 +7,10 @@ const publicPath = path.resolve(__dirname ,"./public");
 
 const htmlPath = path.resolve(__dirname, "./views/home.html");
 
+const registerPath = path.resolve(__dirname, "./views/register.html") ;
+
+app.use(express.static(registerPath))
+
 app.use(express.static(htmlPath));
 
 app.use( express.static(publicPath));
