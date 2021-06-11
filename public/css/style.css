@@ -5,6 +5,7 @@ box-sizing: border-box;}
 
 
 main { 
+    width: 90vw;
     background-color: #ebebeb;
     align-items: center;
     margin:auto;
@@ -22,7 +23,7 @@ align-items: center;}
     background-color: white;
     width: 300px;
 padding: 0px;
-margin: auto;
+margin: 5px auto;
 justify-content: center;}
 
 body { font-family: 'roboto' , sans-serifg;
@@ -33,6 +34,8 @@ width: 100%;
 margin: 0;}
 
 
+#menuLista {display: none;}
+
 header { 
     background-color: #EAC926 ;
 padding: 0px;
@@ -41,10 +44,14 @@ display: block;}
     #menuHam { display: inline-block;
         color:white;
     background-color: blue;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
 position: center;
-padding: 2px;
-border-radius: 3px;
-margin-bottom: 15px;
+padding: 3.5px;
+border-radius: 5px;
+margin: 3px auto;
 padding-left: 5px;
 padding-right: 5px;}
 
@@ -92,12 +99,20 @@ margin: auto;}
 
 border: 2px solid green;}
 
+h4.descripDescuento {display: none;}
 
 
 @media (min-width: 361px) {
-    
+
+    h4.descripDescuento {display: block;}
+    .productosCaja { box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+    #menuHam { display: none;}
+    #menuLista {display: block;}
 }
 
 @media (min-width: 769px) {
-    
+    h4.descripDescuento {display: block;}
+    .productosCaja {box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+     #menuHam {display: none;}
+     #menuLista {display: block;}
 }
