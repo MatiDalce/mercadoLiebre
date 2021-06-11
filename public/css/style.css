@@ -1,3 +1,8 @@
+* { margin: 0px;
+padding: 0px;
+box-sizing: border-box;}
+
+
 
 main { 
     background-color: #ebebeb;
@@ -15,8 +20,9 @@ align-items: center;}
 
 .productosCaja {
     background-color: white;
+    width: 300px;
 padding: 0px;
-margin: 5px;
+margin: auto;
 justify-content: center;}
 
 body { font-family: 'roboto' , sans-serifg;
@@ -29,7 +35,8 @@ margin: 0;}
 
 header { 
     background-color: #EAC926 ;
-padding: 0px;} 
+padding: 0px;
+display: block;} 
 
     #menuHam { display: inline-block;
         color:white;
@@ -41,7 +48,8 @@ margin-bottom: 15px;
 padding-left: 5px;
 padding-right: 5px;}
 
-.logo { width: 360px;}
+.logo { width: 50%;
+box-sizing: border-box;}
 
 h2 {font-size: 24px;}
 
@@ -70,5 +78,26 @@ padding: 15px;
 flex-direction: row;
 align-items: center;}
 
-.imagenDeProductos { width: 360;
-justify-content: center;}
+.imagenDeProductos { width: 100%;
+}
+.fa-truck { font-size: 16px; 
+    color: green;
+margin: auto;}
+
+
+.contenedorCamion {padding: 7px;
+    margin: auto; 
+    display:inline;
+    border-radius: 50%;
+
+border: 2px solid green;}
+
+
+
+@media (min-width: 361px) {
+    
+}
+
+@media (min-width: 769px) {
+    
+}
