@@ -2,126 +2,123 @@
 padding: 0px;
 box-sizing: border-box;}
 
-
-
-main { 
-    width: 90vw;
-    background-color: #ebebeb;
-    align-items: center;
-    margin:auto;
-    margin-bottom: 5px;
-    padding-bottom: 5px;
-}
-
-footer { display: flex;
-flex-direction: column;
-align-items: center;}
-
-
-
-.productosCaja {
-    background-color: white;
-    width: 300px;
-padding: 0px;
-margin: 5px auto;
-justify-content: center;}
-
-body { font-family: 'roboto' , sans-serifg;
+  body { font-family: 'roboto' , sans-serifg;
     font-size: 12px;
-display: block;
-text-align: center;
-width: 100%;
-margin: 0;}
-
-
-
-.CajamenuLista {display: none;}
-
-header { 
+      display: block;
+     text-align: center;
+      width: 100%;
+    margin: 0;}
+    
+   header { 
     background-color: #EAC926 ;
-padding: 0px;
-display: block;} 
+      padding: 0px;
+        display: block;} 
 
-    #menuHam { display: inline-block;
-        color:white;
-    background-color: blue;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    font-size: 16px;
-position: center;
-padding: 3.5px;
-border-radius: 5px;
-margin: 3px auto;
-padding-left: 5px;
-padding-right: 5px;}
+      .contenedorBarraLogoLeyenda { width:auto;}
 
-.logo { width: 25%;
-box-sizing: border-box;}
+         .logo { width: 25%;
+            box-sizing: border-box;}
 
-h2 {font-size: 24px;}
+          #barraBusqueda { padding: 0;
+              margin: auto;
+              box-sizing: border-box;}
 
-.precios { font-size: 18px;
-width:70% ;}
+            #search { border-radius: 8%;
+             border: 1px solid grey ;
+              height: 35px;
+               width: 250px;
+                 box-sizing: border-box;}
 
-.descuento { font-size: 16px;
-width: 30%;}
+                 #leyendaSinInteres { width: 35%}
 
-.titulosdesecciones { font-size: 24px;}
+        .CajamenuLista {display: none;}
 
-.iconosAzules { color:blue;
-                font-size: 2em;
-                margin-bottom: 10px;
+           #menuHam { display: inline-block;
+                             color:white;
+                         background-color: blue;
+                         width: 25px;
+                         height: 25px;
+                         text-align: center;
+                         font-size: 16px;
+                         position: center;
+                         padding: 3.5px;
+                         border-radius: 5px;
+                         margin: 3px auto;
+                        padding-left: 5px;
+                        padding-right: 5px;}
+                        
+        main {   width: 90vw;
+                background-color: #ebebeb;
+                align-items: center;
+                margin:auto;
+                margin-bottom: 5px;
+                padding-bottom: 5px;}
+
+                #banner { margin-bottom: 0px;} 
+
+                .titulosdesecciones { display: block;}
+
+                h2 {font-size: 24px;}
+
+        .contenedorProductosSeccion { display: flex;
+                    flex-direction: column;}
+
+             .productosCaja {
+                        background-color: white;
+                        width: 300px;
+                    padding: 0px;
+                    margin: 5px auto;
+                    justify-content: center;}
+                      
+                    .imagenDeProductos { width: 100%;
+                    }
+                      
+                    .contenedorDescripionesPrecios {display: flex;
+                    flex-direction: column ;
+                   border-top: 1px solid #ebebeb;
+                     padding: 15px;  }
+                    
+
+                     .contenedorCamion {padding: 7px;
+                        margin: auto; 
+                        
+                        border-radius: 50%;
+                    
+                    border: 2px solid green;}
+                    .fa-truck { font-size: 16px; 
+                        color: green;
+                    margin: auto;}
+
+                    .precioYdescuento { display: flex;
+                        flex-direction: row;}
+
+                        .precios { font-size: 18px;
+                            width:70% ;}
+                            
+                            .descuento { font-size: 16px;
+                            width: 30%;} 
+
+                            .descrip {font-size: 16px; }
+
+                            h4.descrip {display: none;}
+
+         footer { display: flex;
+              flex-direction: column;
+              align-items: center;}
+                                                                                 
+            .iconosAzules { color:blue;
+             font-size: 2em;
+             margin-bottom: 10px;
             text-align: center;}
 
-
-#banner {   
-     margin-bottom: 0px;
-}
-
-.contenedorDescripionesPrecios {display: flex;
- flex-direction: column ;
-border-top: 1px solid #ebebeb;
-padding: 15px;
-}
-.preciosydes {display: flex;
-flex-direction: row;
-align-items: center;}
-
-.precioYdescuento { display: flex;
-flex-direction: row;}
-
-.descrip {font-size: 16px; }
-
-.imagenDeProductos { width: 100%;
-}
-
-.fa-truck { font-size: 16px; 
-    color: green;
-margin: auto;}
-
-
-.contenedorCamion {padding: 7px;
-    margin: auto; 
-    
-    border-radius: 50%;
-
-border: 2px solid green;}
-
-h4.descripDescuento {display: none;}
-
-.contenedorProductosSeccion { display: flex;
-flex-direction: column;}
-
-.preciosY
-
+            
 @media (min-width: 361px) {
 
-    h4.descripDescuento {display: block;}
+    h4.descrip {display: block;}
     .productosCaja { box-shadow: 0px 0px 10px rgb(100, 100, 100);}
     #menuHam { display: none;}
     .menuLista {display: block;}
-       .contenedorLogoBarra { 
+       .contenedorBarraLogoLeyenda { 
             display: flex;
             flex-direction: row;
             }
@@ -136,13 +133,13 @@ flex-direction: column;}
 
 
 @media (min-width: 769px) {
-    h4.descripDescuento {display: block;}
+    h4.descrip {display: block;}
     .productosCaja {box-shadow: 0px 0px 10px rgb(100, 100, 100);}
      #menuHam {display: none;}
      .menuLista {display: block;}
   .contenedorProductosSeccion { display: flex;
             flex-direction: row;}
-            .contenedorLogoBarra { 
+            .contenedorBarraLogoLeyenda { 
                 display: flex;
                 flex-direction: row;
                 }
