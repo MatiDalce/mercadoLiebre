@@ -1,4 +1,4 @@
-
+*{box-sizing: border-box;}
 
   body { font-family: 'roboto' , sans-serifg;
     font-size: 12px;
@@ -7,34 +7,33 @@
       width: 100%;
     margin: 0;}
     
-   header { 
+   header { margin: auto;
     background-color: #EAC926 ;
       padding: 0px;
         display: block;} 
 
-      .contenedorBarraLogoLeyenda {display: flex;
-                       flex-direction: row;
-                       flex-wrap: wrap;
-                       align-items: center;
-        width:auto;
-      padding:1px;}
+      .contenedorBarraLogoLeyenda {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+      }
 
          .logo { width: 50%;
-          height: 50px;
+          height: auto;
            }
 
           #barraBusqueda { width: 50%;
             padding: 0;
-              margin:auto;
+              margin: auto;
               box-sizing: border-box;}
 
             #search { border-radius: 8%;
              border: 1px solid grey ;
-             width: 100%;
+             width: auto;
                  box-sizing: border-box;}
 
                  #leyendaSinInteres { width: 100%;
-                margin:auto;}
+                margin: auto;}
 
         .CajamenuLista {display: none;}
 
@@ -52,12 +51,42 @@
                         padding-left: 5px;
                         padding-right: 5px;}
                         
-        main {   width: 90vw;
+        main {   width: 100%;
                 background-color: #ebebeb;
                 align-items: center;
                 margin:auto;
                 margin-bottom: 5px;
                 padding-bottom: 5px;}
+
+
+                .mainlogin {display: flex;
+                  flex-direction: column;
+                  align-items: center; 
+                  width: 100%;
+                  background-color: #ebebeb;
+                  align-items: center;
+                  margin:auto;
+                
+                  padding: 10px 50px;} 
+
+                  #submit  {margin: 10px auto;
+                  width: 50%;
+                background-color: blue;
+                height:30px;
+                border: 1px solid blue;
+                 border-radius: 3%;}
+
+                  #pass {margin: 10px auto;
+                  width: 50%;
+                height:30px;
+              border-radius: 8px solid lightgrey  }
+
+                  #usuario {margin: 10px auto;
+                  width: 50%;
+                height:30px;
+              border-radius: 8px solid lightgrey  }
+
+        
 
                 #banner { margin-bottom: 0px;} 
 
@@ -66,7 +95,8 @@
                 h2 {font-size: 24px;}
 
         .contenedorProductosSeccion { display: flex;
-                    flex-direction: column;}
+                    flex-direction: column;
+                  }
 
              .productosCaja {
                         background-color: white;
@@ -85,14 +115,16 @@
                     
 
                      .contenedorCamion {
-                      width: 20px;
-                      height: 20px; 
+                      width: 35px;
+                      height: 35px; 
                       padding: 7px;
                         margin-left: 85%;
                         margin-top: -30px;  
                         border-radius: 50%; 
                         background-color:#FFF;
-                    border: 2px solid green;}
+                    border: 2px solid green;
+                  align-items: center;
+                justify-content: center;}
 
                     .fa-truck { font-size: 16px; 
                         color: green;
@@ -123,22 +155,33 @@
             
 @media (min-width: 361px) {
 
-    h4.descrip {display: block;}
+    h4.descrip {display: block;
+    margin: auto;}
 
     .contenedorProductosSeccion{ display: flex;
     flex-direction: row;
   flex-wrap: wrap;
 justify-content: center;}
    .contenedorProductosSeccion .productosCaja { box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    margin: 5px ;
+    margin: 5px 15px  ;
   width: 40%;}
 
     #menuHam { display: none;}
     .menuLista {display: block;}
-       .contenedorBarraLogoLeyenda { 
-            display: flex;
-            flex-direction: row;
-            }
+    .contenedorBarraLogoLeyenda { 
+      display: flex;
+      flex-direction: row;
+      }
+       .logo{height: auto;
+      width: 33%;}
+      #barraBusqueda{ width: 33%;
+        margin: auto;   }
+          #search {width: 100%;}
+          #leyendaSinInteres{
+            width: 33%;
+            margin: auto;
+         }
+          
             .CajamenuLista{display: flex;
             flex-direction: row
             ;
@@ -150,23 +193,28 @@ justify-content: center;}
 
 
 @media (min-width: 769px) {
-    h4.descrip {display: block;}
+    h4.descrip {display: block;
+    margin: auto;}
     .productosCaja {box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    margin: 5px;
+    margin: 15px;
  }
      #menuHam {display: none;}
      .menuLista {display: block;}
   .contenedorProductosSeccion { display: flex;
             flex-direction: row;
-          flex-wrap: nowrap;}
+          flex-wrap: nowrap;
+        padding: 5px 80px}
             .contenedorBarraLogoLeyenda { 
                 display: flex;
                 flex-direction: row;
                 }
-                 .logo{margin-left: 0px;
+                 .logo{height: auto;
                 width: 33%;}
                 #barraBusqueda{ width: 33%;
+                  margin: auto;
+                  
                     }
+                    #search {width: 100%;}
                     .CajamenuLista{display: flex;
                         flex-direction: row; 
                  justify-content: space-between;}
@@ -175,6 +223,7 @@ justify-content: center;}
                     align-items: space-between;}
                 #leyendaSinInteres{
                    width: 33%;
+                   margin: auto;
                 }
                 }
 

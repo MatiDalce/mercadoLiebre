@@ -9,6 +9,8 @@ const htmlPath = path.resolve(__dirname, "./views/home.html");
 
 const registerPath = path.resolve(__dirname, "./views/register.html") ;
 
+const loginPath = path.resolve(__dirname, "./views/login.html") ;
+
 app.use(express.static(registerPath))
 
 app.use(express.static(htmlPath));
@@ -19,3 +21,7 @@ app.listen(3000, () => {console.log("de forma correcta") }) ;
 
 app.get ( "/" , (req, res) =>  { res.sendFile(htmlPath);  
 } ) 
+
+app.get("/register" , (req, res) => {res.sendFile(registerPath)} ) 
+
+app.get("/login", (req, res) => { res.sendFile(loginPath)})
