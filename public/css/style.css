@@ -141,7 +141,8 @@
                     .contenedorDescripionesPrecios {display: flex;
                     flex-direction: column ;
                    border-top: 1px solid #ebebeb;
-                     padding: 15px;  }
+                     padding: 15px;
+                    margin-bottom: 10px;  }
                     
 
                      .contenedorCamion {
@@ -161,15 +162,31 @@
                     margin: auto;}
 
                     .precioYdescuento { display: flex;
-                        flex-direction: row;}
+                        flex-direction: row;
+                      justify-content: left;
+                    align-items: flex-start;
+                     padding: 2px;
+                    margin: 0px 0px 8px 0px;}
 
+                    h5.precios { margin: 0px 1px;
+                  }
+
+                  h5.descuento { margin:0px 1px;}
                         .precios { font-size: 18px;
-                            width:70% ;}
+                            width:30% ;
+                          margin-left: 0px;
+                        padding: 0%;
+                      }
+                          
+
+                            
                             
                             .descuento { font-size: 16px;
-                            width: 30%;} 
+                            width: 70%;
+                          margin: 30px auto;} 
 
-                            .descrip {font-size: 16px; }
+                            .descrip {font-size: 16px; 
+                            color: grey;}
 
                             h4.descrip {display: none;}
 
@@ -178,20 +195,22 @@
 
                             .ckeckboxlabel {display: flex;
                             flex-direction: column;}
-
-         footer { display: flex;
-              flex-direction: column;
-              align-items: center;
-            padding: 5px;}
-
-              .footersection{padding: 10px;}
-                                                                                 
-            .iconosAzules { color:blue;
+  
+                            .iconosAzules { color:blue;
              font-size: 2em;
              margin-bottom: 10px;
             text-align: center;}
 
             .iconosAzules:hover { color: silver;}
+
+
+            footer { padding: 10px;}
+
+            .threeboxfoot { display: flex;
+            flex-direction: column;
+            align-items: center;
+          
+      }
 
             
 @media (min-width: 361px) {
@@ -230,26 +249,30 @@ justify-content: center;}
             ul {display: flex;
             flex-direction: row;
         align-items: space-between;}
+
+        footer{display: flex;
+        flex-direction: column;
+      text-align: center;
+    align-items: center;}
+
+        .threeboxfoot { display: flex;
+          flex-direction: row ;
+        padding: 2px;
+      margin: 1px;
+    align-items: center;}     
+    .footersection { margin:auto 7px;}
+        
             }
+
+
+            
 
 
 @media (min-width: 769px) {
     h4.descrip {display: block;
-    margin: auto;}
+    margin-left: 1px;}
     .productosCaja {box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    margin: 15px;
- }
- footer { display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-flex-wrap: wrap;}
-
-  .copyr{display: block;
-    width: 75%;
-    margin: auto
-    ;
-   }
+    margin: 15px; }
      #menuHam {display: none;}
      .menuLista {display: block;}
   .contenedorProductosSeccion { display: flex;
@@ -262,10 +285,11 @@ flex-wrap: wrap;}
                 }
                  .logo{height: auto;
                 width: 33%;}
+
                 #barraBusqueda{ width: 33%;
                   margin: auto;
-                  
-                    }
+                               }
+
                     #search {width: 100%;}
                     .CajamenuLista{display: flex;
                         flex-direction: row; 
@@ -275,8 +299,28 @@ flex-wrap: wrap;}
                     align-items: space-between;}
                 #leyendaSinInteres{
                    width: 33%;
-                   margin: auto;
-                }
-                }
+                   margin: auto;    }
 
 
+                   .precios:hover { font-style: italic;
+                     font-weight:700;}
+
+                            .descuento:hover { 
+                              font-weight: 900;
+                              color: green;}
+
+
+                   footer{display: flex;
+                    flex-direction: column;
+                  text-align: center;
+                align-items: center;
+              font-size: 16px;}
+            
+                    .threeboxfoot { display: flex;
+                      flex-direction: row ;
+                    padding: 2px;
+                  margin: 1px;
+                align-items: center;}     
+                    
+                .footersection { margin:auto 50px;}
+                        }
