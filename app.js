@@ -11,7 +11,7 @@ const registerPath = path.resolve(__dirname, "./views/register.html") ;
 
 const loginPath = path.resolve(__dirname, "./views/login.html") ;
 
-app.use(express.static(registerPath))
+app.use(express.static(registerPath));
 
 app.use(express.static(htmlPath));
 

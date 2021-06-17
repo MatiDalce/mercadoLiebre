@@ -3,6 +3,7 @@
   body { font-family: 'roboto' , sans-serifg;
     font-size: 12px;
       display: block;
+      overflow-x:hidden;
      text-align: center;
       width: 100%;
     margin: 0;}
@@ -37,6 +38,8 @@
 
         .CajamenuLista {display: none;}
 
+        li { margin: 1px 5px ;}
+
            #menuHam { display: inline-block;
                              color:white;
                          background-color: blue;
@@ -47,7 +50,7 @@
                          position: center;
                          padding: 3.5px;
                          border-radius: 5px;
-                         margin: 3px auto;
+                         margin: 0px auto 12px auto;
                         padding-left: 5px;
                         padding-right: 5px;}
                         
@@ -69,12 +72,39 @@
                 
                   padding: 10px 50px;} 
 
+                  .mainRegister { 
+                    display: flex;
+                    flex-direction: column;
+                    width: 80vw;
+                  }
+
+                  .formularioRegistro { display: flex;
+                  flex-direction: column;
+                align-items: center;}
+
+                
+
                   #submit  {margin: 10px auto;
                   width: 50%;
-                background-color: blue;
+                 
+              
                 height:30px;
-                border: 1px solid blue;
-                 border-radius: 3%;}
+                
+                 border-radius: 5px;}
+
+                 #reset {margin: 10px auto;
+                  width: 50%;
+                 
+              
+                height:30px;
+                
+                 border-radius: 5px;}
+
+                 #submit:hover { background-color: #0022AA;
+                color: white;}
+
+                #reset:hover { background-color: #0022AA;
+                color:white;}
 
                   #pass {margin: 10px auto;
                   width: 50%;
@@ -143,14 +173,25 @@
 
                             h4.descrip {display: none;}
 
+                             
+                                
+
+                            .ckeckboxlabel {display: flex;
+                            flex-direction: column;}
+
          footer { display: flex;
               flex-direction: column;
-              align-items: center;}
+              align-items: center;
+            padding: 5px;}
+
+              .footersection{padding: 10px;}
                                                                                  
             .iconosAzules { color:blue;
              font-size: 2em;
              margin-bottom: 10px;
             text-align: center;}
+
+            .iconosAzules:hover { color: silver;}
 
             
 @media (min-width: 361px) {
@@ -198,6 +239,17 @@ justify-content: center;}
     .productosCaja {box-shadow: 0px 0px 10px rgb(100, 100, 100);
     margin: 15px;
  }
+ footer { display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+flex-wrap: wrap;}
+
+  .copyr{display: block;
+    width: 75%;
+    margin: auto
+    ;
+   }
      #menuHam {display: none;}
      .menuLista {display: block;}
   .contenedorProductosSeccion { display: flex;

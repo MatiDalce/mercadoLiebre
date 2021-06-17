@@ -58,10 +58,10 @@
 
 
 
-  <main>
+  <main > 
     
-  
-    <form method="POST"> 
+       <div class="mainregister" >
+    <form method="POST" class="formularioRegistro"> 
         
             <label for="nombre">Nombre y Apellido</label>
             <input type="text" id="nombre" name="nombre">
@@ -83,20 +83,20 @@
         
 
       
-            <label for="tipodeU">¿Querés comprar o vender?</label>
-            <input type="radio" id="tipodeU" name="tipodeU" value="Comprar"> 
-            <input type="radio" id="tipodeU" name="tipodeU" value="Vender">
-        
+            <label>¿Querés comprar o vender?
+              <input type="radio" value="comprar" name="tipodeu" > Comprar </input>
+              <input type="radio" value="vender" name="tipodeu"> Vender </input>
+            </label>
 
         
 
-            <label for="intereses">intereses</label>
-            <input type="checkbox" id="intereses" name="intereses" value="Electro">
-            <input type="checkbox" id="intereses" name="intereses" value="Moda">
-            <input type="checkbox" id="intereses" name="intereses" value="Hogar">
-            <input type="checkbox" id="intereses" name="intereses" value="Jueguetes">
-            <input type="checkbox" id="intereses" name="intereses" value="VidaSana">
-        
+            <label for="intereses" class="ckeckbox">intereses
+            <input type="checkbox" id="intereses" name="intereses" value="Electro"> Electro </input>
+            <input type="checkbox" id="intereses" name="intereses" value="Moda"> Moda    </input>
+            <input type="checkbox" id="intereses" name="intereses" value="Hogar"> Hogar   </input>
+            <input type="checkbox" id="intereses" name="intereses" value="Juguetes"> Juguetes</input>
+            <input type="checkbox" id="intereses" name="intereses" value="VidaSana"> Vida Sana</input>
+           </label>
 
             <label for="fotodeU">Ingresá tu foto de perfil</label>
             <input type="file" id="fotodeU" name="fotodeU">
@@ -119,11 +119,11 @@
     </form>
 
     
-    
+  </div>
   </main>
 
   <footer> 
-      <section> <span class=iconosAzules>
+      <section class="footersection"> <span class=iconosAzules>
           <i class="far fa-credit-card"></i> </span>
         <h4>Pagá con tarjeta o en efectivo </h4>
 
@@ -132,17 +132,17 @@
 
       </section>
 
-      <section> <span class=iconosAzules>
+      <section class="footersection"> <span class=iconosAzules>
           <i class="fas fa-gift"></i></span>
         <h4>Envío gratis desde $ 2.500 </h4>
 
         <h6> Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
           productos. Es un beneficio de Mercado Puntos. </h6>
 
-      </section>
+      </section class="footersection">
 
 
-      <section> <span class=iconosAzules>
+      <section class="footersection"> <span class=iconosAzules>
 
           <i class="fas fa-user-shield"></i></span>
 
@@ -151,11 +151,11 @@
           porque estás siempre protegid@.</h6>
       </section>
 
-      <section>
+      <div class="footersection copyr">
         <h6>Copyright © 1999-2020 MercadoLiebre S.R.L. </6h>
-      </section>
+        </div>
 
-  </footer>
+   </footer>
 </body>
 
 </html>
