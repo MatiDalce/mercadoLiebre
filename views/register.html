@@ -24,105 +24,141 @@
 <body>
 
   <header>
-    <div class = contenedorBarraLogoLeyenda>
-   <span class=logo> <img height="50px" width="100%" src="/images/logo-mercado-liebre.svg" alt="logo de mercadolibre " /> </span>
-   <span id="barraBusqueda">
-     <input type="search" id="search" name="search" placeholder="Buscar productos">
+    <div class=contenedorBarraLogoLeyenda>
+      <span class=logo> <img height="50px" width="100%" src="/images/logo-mercado-liebre.svg"
+          alt="logo de mercadolibre " /> </span>
+      <span id="barraBusqueda">
+        <input type="search" id="search" name="search" placeholder="Buscar productos">
+      </span>
+      <span id="leyendaSinInteres">
+        <h3> <i class="fas fa-hand-holding-usd"> </i> Comprá en cuotas y sin tarjeta de crédito</h3>
+      </span>
+    </div>
+
+    <span class=CajamenuLista>
+      <ul type=none>
+        <li> <a href="s"> Ofertas </a></li>
+        <li> <a href="s"> Tiendas oficiales </a></li>
+        <li> <a href="a"> Vender </a></li>
+        <li><a href="asd"> Ayuda </a></li>
+
+      </ul>
+
+      <br />
+
+
+      <ul type=none>
+        <li> <a class=liletico href="http://localhost:3000/register"> Creá tu cuenta </a> <a
+            href="http://localhost:3000/register"><i class="far fa-address-card"></i></a></li>
+        <li> <a class=liletico href="http://localhost:3000/login"> Ingresá </a> <a href="http://localhost:3000/login"><i
+              class="fas fa-sign-in-alt"></i></a></li>
+        <li> <a class=liletico href="d"> Mis Compras </a><i class="fas fa-shopping-basket"></i></li>
+      </ul>
+
     </span>
-     <span id="leyendaSinInteres"> <h3> <i class="fas fa-hand-holding-usd"> </i> Comprá en cuotas y sin tarjeta de crédito</h3>
-   </span>  
- </div>
-   
-   <span class=CajamenuLista>
-     <ul type=none>
-       <li> <a href="s"> Ofertas </a></li>
-       <li> <a href="s"> Tiendas oficiales </a></li>
-       <li> <a href="a"> Vender </a></li>
-       <li><a href="asd"> Ayuda </a></li>
-       
-     </ul>
-   
-<br/>
 
-   
-     <ul type=none>
-       <li > <a class= liletico href="http://localhost:3000/register"> Creá tu cuenta </a> <a  href="http://localhost:3000/register"><i class="far fa-address-card"></i></a></li>
-       <li> <a  class= liletico href="http://localhost:3000/login"> Ingresá </a> <a href="http://localhost:3000/login"><i class="fas fa-sign-in-alt"></i></a></li>
-       <li> <a class= liletico href="d">  Mis Compras  </a><i class="fas fa-shopping-basket"></i></li>
-     </ul>
+    <div id=menuHam> <i class="fas fa-bars"></i> </div>
+  </header>
+
+
+
+  <main class="mainRegister">
+
+    <div class="completatusdatoscaja">
+
+
+      <h1 id=completadatos> Completá tus datos</h1>
+    </div>
+
+  <div class="contenedorFormulario">
+
+
+      <form method="POST" class="formularioRegistro">
+
+
+
+
+            <fieldset>
+        <input type="text" id="usuario" name="nombreYapellido"  placeholder="NOMBRE COMPLETO">
+      
+      </fieldset>
+
+
+
+      <fieldset>
      
-   </span>
+        <input type="text" id="usuario" name="usuario"  placeholder="USUARIO">
+ </fieldset>
 
-   <div id=menuHam> <i class="fas fa-bars"></i> </div>
- </header>
+ <fieldset class="fechaContendor">
+
+        <label for="bday" class="fechadeB">Fecha de Nacimiento</label>
+          <input type="date" id="bday" name="bday">
+</fieldset>
+
+
+<fieldset>
+
+        <input type="text" id="domicilio" name="domicilio"  placeholder="DOMICILIO">
+</fieldset>
+
+<fieldset>
+
+        <label for="tipodeu" class="venderOcom">¿Querés comprar o vender?     </label>
+<div class="opCompra">
+          <input type="radio" value="comprar" name="tipodeu" > Comprar </input>
+          <input type="radio" value="vender" name="tipodeu"> Vender </input></div>
+   </fieldset>
 
 
 
-  <main > 
-    
-       <div class="mainregister" >
-    <form method="POST" class="formularioRegistro"> 
-        
-            <label for="nombre">Nombre y Apellido</label>
-            <input type="text" id="nombre" name="nombre">
-        
+  <fieldset class="interesesContenedor">
+        <label for="intereses" class="Intereses"> Intereses  </label>
 
-      
-            <label for="usuario">Nombre de Usuario</label>
-            <input type="text" id="usuario" name="usuario">
-        
-
-      
-            <label for="bday">Fecha de Nacimiento</label>
-            <input type="date" id="bday" name="bday">
-        
-
-      
-            <label for="domicilio">Domicilio</label>
-            <input type="text" id="domicilio" name="domicilio">
-        
-
-      
-            <label>¿Querés comprar o vender?
-              <input type="radio" value="comprar" name="tipodeu" > Comprar </input>
-              <input type="radio" value="vender" name="tipodeu"> Vender </input>
-            </label>
-
-        
-
-            <label for="intereses" class="ckeckbox">intereses
+           <div class="categoriasIntereses">
             <input type="checkbox" id="intereses" name="intereses" value="Electro"> Electro </input>
-            <input type="checkbox" id="intereses" name="intereses" value="Moda"> Moda    </input>
-            <input type="checkbox" id="intereses" name="intereses" value="Hogar"> Hogar   </input>
+            <input type="checkbox" id="intereses" name="intereses" value="Moda"> Moda </input>
+            <input type="checkbox" id="intereses" name="intereses" value="Hogar"> Hogar </input>
             <input type="checkbox" id="intereses" name="intereses" value="Juguetes"> Juguetes</input>
-            <input type="checkbox" id="intereses" name="intereses" value="VidaSana"> Vida Sana</input>
-           </label>
-
-            <label for="fotodeU">Ingresá tu foto de perfil</label>
-            <input type="file" id="fotodeU" name="fotodeU">
-        
-
-          
-              <label for="pass">Contraseña</label>
-              <input type="password" id="pass" name="pass"> 
-            
-
-          
-                <label for="confirpass">Confirmar Contraseña</label>
-                <input type="password" id="confirpass" name="confirpass">
-            
-             
-              <button type="submit" id="submit" name="submit"> Enviar</button>
-              <button type="reset" id="reset" name="reset">Reset</button> 
+            <input type="checkbox" id="intereses" name="intereses" value="VidaSana"> Vida Sana</input></div>
+      
+            </fieldset>
+                        
 
 
-    </form>
 
-    
-  </div>
+
+          <fieldset class="fotodePerffield">
+      <label for="fotodeU" class="tituloingresafoto"> Ingresá tu foto de perfil
+
+
+      <input type="file" id="fotodeU" name="fotodeU" class=inputFoto></label>
+
+    </fieldset>
+
+
+  <fieldset>
+        <input type="password" id="pass" name="pass"  placeholder="CONTRASEÑA">
+
+      </fieldset>
+
+    <fieldset>
+        <input type="password" id="confirpass" name="confirpass"  placeholder="CONFIRMAR CONTRASEÑA">
+      </fieldset>
+    <fieldset>
+        <button type="submit" id="submit" name="submit"> Enviar</button>
+     
+         <button type="reset" id="reset" name="reset">Reset</button>
+        </fieldset>
+
+
+          </form>
+
+
+   </div>
   </main>
 
-  <footer> 
+  <footer>
 
     <div class="threeboxfoot">
       <section class="footersection"> <span class=iconosAzules>
@@ -154,10 +190,10 @@
       </section>
     </div>
 
-      <section class="footersection copyr">
-        
-        <h6>Copyright © 1999-2020 MercadoLiebre S.R.L. </6h>
-      </section>
+    <section class="footersection copyr">
+
+      <h6>Copyright © 1999-2020 MercadoLiebre S.R.L. </6h>
+    </section>
 
   </footer>
 </body>

@@ -19,6 +19,12 @@
         padding-top: 20px;
       }
 
+
+      #bday { border-radius: 4px;
+        border: none;
+        width: 25%;
+         background-color: lightslategray;
+      }
          .logo { width: 50%;
           height: auto;
            }
@@ -89,9 +95,11 @@ a:visited{color:black;}
                   .mainRegister { 
                     display: flex;
                     flex-direction: column;
-                    width: 80vw;
+                    width: 100%;
+                    margin: auto;                 
                   }
-
+                
+                  
                   .botonlogin { background-color: blue;
                     color: white;
                                  text-align: center;
@@ -110,46 +118,192 @@ a:visited{color:black;}
 
 
                   .formularioRegistro { display: flex;
+                    margin: 0px auto 0px auto;
                   flex-direction: column;
-                align-items: center;}
+                align-items: center;
+              width: 85%;
+            background-color: transparent;
+         
+       
+      border: 2px solid grey;
+    border-top: none;
+  border-bottom: none;}
+
+  .fotodePerffield { padding:10px;}
+  
+
+  .inputFoto { color: transparent;
+  margin: auto;}
+
+ .completatusdatoscaja { display: flex;
+  margin: 0px auto 0px auto;
+flex-direction: column;
+align-items: center;
+width: 85%;
+background-color: transparent;
+
+
+border: 2px solid grey;
+border-top: none;
+border-bottom: none;}
+
+.opCompra{ display: flex;
+flex-direction: row;
+justify-content: center;
+margin:2px;}
 
                 
 
                 h2 {text-align: left;
                 margin-left: 8%;}
 
-                  #submit  {margin: 10px auto;
+                 button  {margin: 10px auto;           
                   width: 50%;
+                  background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    border: 0px solid blue;
                  
               
                 height:30px;
                 
                  border-radius: 5px;}
 
-                 #reset {margin: 10px auto;
-                  width: 50%;
-                 
-              
-                height:30px;
-                
-                 border-radius: 5px;}
 
-                 #submit:hover { background-color: #0022AA;
+                 .botonlogin {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    border: 0px solid blue;}
+
+                
+
+               button:hover { background-color: #0022AA;
                 color: white;}
 
-                #reset:hover { background-color: #0022AA;
-                color:white;}
 
-                  #pass {margin: 10px auto;
+                #pass {margin: 5px auto;
                   width: 50%;
                 height:30px;
-              border-radius: 8px solid lightgrey  }
+              border-radius: 8px  ;
+            border: 1px solid grey;
+          text-align:center }
 
-                  #usuario {margin: 10px auto;
-                  width: 50%;
-                height:30px;
-              border-radius: 8px solid lightgrey  }
+              #usuario {margin: 5px auto;
+                width: 50%;
+              height:30px;
+            border-radius: 8px ; 
+          border: 1px solid grey;
+        text-align:center }
 
+        #domicilio {margin: 5px auto;
+          width: 50%;
+        height:30px;
+      border-radius: 8px ; 
+    border: 1px solid grey;
+  text-align:center; }
+
+  .fechadeB { font-size: 16px;
+   color: black;
+  font-weight: bold;
+margin: 3px 10px;}
+
+.Intereses {  font-size: 16px;
+  color: black;
+ font-weight: bold;
+margin: 3px 10px
+;
+text-align: left;}
+
+.interesesContenedor { display: flex ;
+flex-direction: row;
+justify-content: center;
+align-items: center;}
+
+.fechaContenedor { padding-top: 3px;
+margin: 2px auto;}
+
+.venderOcom { font-size: 16px;
+font-weight: bold;
+margin:2px auto;}
+
+.categoriasIntereses {  display: flex;
+  text-align: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+  font-size: 14x;
+  padding:15px;
+ 
+ color:black;
+justify-content: left;}
+  
+  fieldset{ border: none;
+  border-bottom: 1px dashed black;
+padding: 2px auto;
+width: 100%;
+margin: auto;}
+            #confirpass {margin: 5px auto;
+              width: 50%;
+            height:30px;
+          border-radius: 8px  ;
+        border: 1px solid grey;
+      text-align:center }
+
+          #email {margin: 5px auto;
+            width: 50%;
+          height:30px;
+        border-radius: 8px  ;
+      border: 1px solid grey;
+    text-align:center}
+
+
+      #pass:hover {margin: 5px auto;
+        width: 50%;
+      height:30px;
+    border-radius: 8px  ;
+  border: 2px solid grey; }
+
+    #usuario:hover {margin: 5px auto;
+      width: 50%;
+    height:30px;
+  border-radius: 8px ; 
+border: 2px solid grey; }
+
+  #confirpass:hover {margin: 5px auto;
+    width: 50%;
+  height:30px;
+border-radius: 8px  ;
+border: 2px solid grey; }
+
+#email:hover {margin: 5px auto;
+  width: 50%;
+height:30px;
+border-radius: 8px  ;
+border: 2px solid grey;}
+
+        #fotodeU {width: 30%;}
+
+        .tituloingresafoto { font-size: 16px;
+        text-align: left;
+        font-weight: bold;
+        }
+
+        
+
+  .interesesCaja { width: 100%;
+                   display: flex;
+                  flex-direction: column;}
+
+                            
+                 
+
+           
+
+              
         
 
                 #banner { margin-bottom: 0px;} 
@@ -161,6 +315,8 @@ a:visited{color:black;}
         .contenedorProductosSeccion { display: flex;
                     flex-direction: column;
                   }
+
+                
 
              .productosCaja {
                         background-color: white;
@@ -258,6 +414,8 @@ a:visited{color:black;}
     h2 { text-align: center;
     margin: 10px auto;}
 
+    .categoriasIntereses {justify-content: center;}
+
     .contenedorProductosSeccion{ display: flex;
     flex-direction: row;
   flex-wrap: wrap;
@@ -285,6 +443,11 @@ justify-content: center;}
             margin: auto;
          }
 
+         .contenedorFormulario { border:10px groove lightslategray;
+        width: 80%;
+      margin: 10px;
+    padding-bottom: 10px; }
+
          .liletico {display: none;}
 
          li { margin-right: 30px;
@@ -309,6 +472,19 @@ justify-content: center;}
       margin: 1px;
     align-items: center;}     
     .footersection { margin:auto 7px;}
+
+    .formularioRegistro { display: flex;
+      margin: 0px auto 0px auto;
+    flex-direction: column;
+  text-align: center;
+width: 85%;
+background-color: transparent;
+border: none;}
+
+.completatusdatoscaja{border: none;}
+
+
+
         
             }
 
