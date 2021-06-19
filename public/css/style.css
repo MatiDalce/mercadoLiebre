@@ -443,6 +443,9 @@ justify-content: center;}
             margin: auto;
          }
 
+         .inputFoto { color: transparent;
+          margin-left: 45px;}
+
          .contenedorFormulario { border:10px groove lightslategray;
         width: 80%;
       margin: 10px;
