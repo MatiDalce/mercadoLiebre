@@ -462,7 +462,7 @@ justify-content: center;}
 
          .liletico {display: none;}
 
-         li { margin-right: auto;
+         li { margin-right: 25px;
         color:black}
           
             .CajamenuLista{display: flex;
