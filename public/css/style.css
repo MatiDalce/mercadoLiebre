@@ -462,7 +462,7 @@ justify-content: center;}
 
          .liletico {display: none;}
 
-         li { margin-right: 30px;
+         li { margin-right: auto;
         color:black}
           
             .CajamenuLista{display: flex;
@@ -505,7 +505,7 @@ margin-bottom:0px}
             
 
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
 
     h4.descrip {display: block;
     margin-left: 0px;
