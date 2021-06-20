@@ -415,7 +415,7 @@ border: 2px solid grey;}
 @media (min-width: 361px) {
 
     h4.descrip {display: block;
-    margin: auto;}
+    margin: auto auto auto 0px;}
 
     h2 { text-align: center;
     margin: 10px auto;}

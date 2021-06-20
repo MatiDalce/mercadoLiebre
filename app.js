@@ -17,7 +17,7 @@ app.use(express.static(htmlPath));
 
 app.use( express.static(publicPath));
 
-app.listen(3000, () => {console.log("de forma correcta") }) ;
+app.listen(process.env.PORT ||3000, () => {console.log("de forma correcta") }) ;
 
 app.get ( "/" , (req, res) =>  { res.sendFile(htmlPath);  
 } ) 
