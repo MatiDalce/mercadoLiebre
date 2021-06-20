@@ -413,7 +413,7 @@ border: 2px solid grey;}
       }
 
             
-@media (min-width: 361px) {
+@media (min-width: 703px) {
 
     h4.descrip {display: block;
     margin: auto auto auto 0px;}
@@ -505,7 +505,7 @@ margin-bottom:0px}
             
 
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
     h4.descrip {display: block;
     margin-left: 0px;
