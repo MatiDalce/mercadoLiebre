@@ -500,7 +500,17 @@ border: none;}
 
 @media (min-width: 769px) {
     h4.descrip {display: block;
-    margin-left: 0px;}
+    margin-left: 0px;
+  
+  opacity: 0;
+transition: all 10ms ;}
+
+  h4.descrip:hover { opacity: 1;
+           }
+
+
+
+
     .productosCaja {box-shadow: 0px 0px 10px rgb(100, 100, 100);
     margin: 15px; }
      #menuHam {display: none;}
@@ -542,8 +552,13 @@ border: none;}
                   padding-top: 50px;
                 }
 
+                fieldset{ border: none;
+                  border-bottom: 1px solid silver;
                   
-                           
+                padding: 2px auto;
+                width: 60%;
+                margin: auto;}
+                            
 
 
                    footer{display: flex;
